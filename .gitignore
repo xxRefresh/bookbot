@@ -1,3 +1,5 @@
-# ignore books directory
-
+# ignore books directory        
 /books
+
+# ignore .venv directory
+.venv/

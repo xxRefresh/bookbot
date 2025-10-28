@@ -26,5 +26,21 @@ def main(get_book_text):
     count_words(book_text)
     char_counts = count_characters(book_text)
     print(char_counts)
+    print_report(book_path, char_counts, num_words)
+
+
+def print_report(book_path: str, char_counts: dict, num_words: int) -> None:
+    """Prints a report of character counts.
+
+    Args:
+        char_counts (dict): A dictionary with characters as keys and their counts as values.
+    """
+    print(f"--- Begin report of {book_path} ---")
+    print(f"{num_words} words found in the document")
+
+    for char, count in sorted(char_counts.items()):
+        print(f"'{char}': {count}")
+
+
 
 main(get_book_text)
