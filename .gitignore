@@ -3,3 +3,24 @@
 
 # ignore .venv directory
 .venv/
+
+# ignore Python cache files
+__pycache__/
+*.pyc
+# ignore IDE specific files
+.vscode/
+.idea/
+*.iml
+# ignore environment variable files
+.env
+.env.local
+# ignore log files
+*.log
+# ignore distribution/build files
+dist/
+build/
+*.egg-info/
+# ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# ignore jupyter notebook files
+*.ipynb
