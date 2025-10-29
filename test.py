@@ -73,5 +73,11 @@ def sort_on(item: dict) -> int:
 
 print_report("books/frankenstein.txt", count_characters(get_book_text("books/frankenstein.txt")), count_words(get_book_text("books/frankenstein.txt")))
 
+def main(get_book_text): 
+    book_path = "books/frankenstein.txt"
+    book_text = get_book_text(book_path)
+    num_words = count_words(book_text)
+    char_counts = count_characters(book_text)
+    print_report(book_path, char_counts, num_words)
 
 
