@@ -14,7 +14,7 @@ def get_book_text(path_to_file: str) -> str:
     return book_contents
 
 # def main(get_book_text):
-#     book_path = "books/frankenstein.txt"
+#     book_path = "books/frankenstein.txt" ""
 #     book_text = get_book_text(book_path)
 #     print(book_text)
 
