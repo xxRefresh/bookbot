@@ -59,6 +59,8 @@ def print_report(book_path: str, char_dict: dict, num_words: int) -> None:
         per_dict["num"] = num
         char.append(per_dict)
 
+    # Sort the characters by their count
+    
     char.sort(reverse=True, key=sort_on)
 
     for content in char:
